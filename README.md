@@ -11,10 +11,12 @@ npm install
 ```sh
 
 ## In npm-spawn
+
 ```javascript
 var npmCmd = require('npm-spawn');
 npmCmd(['install'], options)
 ```javascript
+
 ## Examples
 - npm install => npmCmd(['install'])
 - npm run build => npmCmd(['run','build])
@@ -22,6 +24,7 @@ npmCmd(['install'], options)
 ### args
 npm install ['install']
 npm run build ['run', 'build']
+
 ### Options
 [More Options](https://nodejs.org/api/child_process.html#child_process_child_process_exec_command_options_callback)
 
@@ -29,6 +32,7 @@ format like below:
 ```javascript
 var options = {cwd:'src'};
 ```javascript
+
 
 command <String> The command to run
 args <Array> List of string arguments
